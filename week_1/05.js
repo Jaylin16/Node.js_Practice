@@ -27,13 +27,17 @@ console.log(typeof result4);
 // 2. 명시적 형 변환
 // 2-1. Boolean
 console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(null));
 console.log(Boolean(NaN));
 console.log(Boolean(undefined));
-console.log("============");
+console.log("============아래는 true============");
 console.log(Boolean("false"));
 console.log(Boolean({}));
+console.log(Boolean(1));
+console.log(Boolean(-5));
 
-// 값이 있는 문자열과 객체(비었어도)는 무조건 "true"로 반환
+// 값이 있는 문자열, 객체(비었어도), 숫자('0' 제외)는 "true"로 반환
 
 // 2-2. 문자열
 let result5 = String(123);
